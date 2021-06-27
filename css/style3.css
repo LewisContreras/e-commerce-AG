@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+	display:flex;
+	flex-direction: column;
+  height: 100vh;
+
+}
+
+/* SECTION */
+
+.section {
+  flex-grow: 1;
+  flex-shrink: 0;
+  padding: 20px;
+}
+
+.section__container{
+  display: flex;
+  height: 100%;
+  width: 100%;
+
+}
+
+.side{
+  flex-basis: 15%;
+}
+
+.category a{
+  text-decoration: none;
+  margin: 10px;
+  color: black;
+}
+
+.category1{
+  color: blue !important;
+}
+
+.products{
+  flex-grow: 1;
+}
+
+.products__container{
+  display: grid;
+  height: 500px;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 250px 250px;
+}
+
+.product__image{
+	height: 60%;
+  width: 150px;
+  margin: auto
+}
+
+.product p{
+  display: block;
+  text-align: center;
+
+}
+
+.image{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.image:hover{
+  box-shadow: 10px 5px 5px gray;
+}
+
+/* PANTALLAS MENORES A 700 */
+
+@media all and (max-width:700px) {
+  .section__container{
+    flex-direction: column;
+  
+  }
+  .category{
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  .products__container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 100%;
+  }
+  
+  .product{
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .product__image{
+      height: auto;
+      width: 240px;
+      margin: auto;
+  }
+  
+  .blank{
+    display: none;
+  }
+}

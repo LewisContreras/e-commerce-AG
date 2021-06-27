@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de pago</title>
+    <!-- HEADER AND FOOTER -->
+    <link rel="stylesheet" href="css/headerAndFooter.css" type="text/css">
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/5a55d3b928.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/style5.css" type="text/css">
+  </head>
+  <body>
+
+    <div class="container">
+
+
+      <header class="header">
+      </header>
+
+
+
+      <section  class="section">
+        <div class="section__container">
+          <form class="form" action="index.html" method="">
+            <input type="text" name="name" placeholder="Nombre" required>
+            <input type="email" name="email"  placeholder="Correo"  required>
+            <input type="number" name="card"  placeholder="Tarjeta" required>
+            <div class="card">
+              <input id="expiration" type="datetime" name=""  placeholder="Vencimiento MM/AA" required>
+              <input id="cvv" min="100" max="999" type="number" name="cvv"  placeholder="CVV" required>
+            </div>
+            <a href="index.html"><button class="button submit" type="submit" name="button">PAGAR</button></a>
+          </form>
+        </div>
+      </section>
+
+
+
+      <footer class="footer">
+      </footer>
+
+
+
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="module" src="js/index5.js"></script>
+  </body>
+</html>
